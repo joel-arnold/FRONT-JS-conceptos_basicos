@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase JS Frontend - UTN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección 1: Introducción y Manipulación del DOM -->
+    <header>
+        <h1 id="titulo">¡Bienvenidos a la Clase de JavaScript!</h1>
+        <p id="subtitulo">Aprende a manipular el DOM y consumir APIs</p>
+    </header>
+
+    <main>
+        <!-- Demo de Selección y Modificación de Elementos -->
+        <section class="seccion-dom">
+            <h2>📝 Manipulación del DOM</h2>
+            
+            <div class="ejemplos-dom">
+                <div class="ejemplo">
+                    <h3>Cambiar Texto y Estilos</h3>
+                    <p id="texto-ejemplo">Este texto puede cambiar</p>
+                    <button id="cambiarTexto" class="btn btn-primary">Cambiar Texto</button>
+                    <button id="cambiarColor" class="btn btn-secondary">Cambiar Color</button>
+                </div>
+
+                <div class="ejemplo">
+                    <h3>Mostrar/Ocultar Elementos</h3>
+                    <div id="menuOculto" class="menu-oculto">
+                        <p>🎉 ¡Este es un menú que se puede mostrar/ocultar!</p>
+                        <ul>
+                            <li>Opción 1</li>
+                            <li>Opción 2</li>
+                            <li>Opción 3</li>
+                        </ul>
+                    </div>
+                    <button id="toggleMenu" class="btn btn-success">Mostrar/Ocultar Menú</button>
+                </div>
+
+                <div class="ejemplo">
+                    <h3>Cambiar Fondo de la Página</h3>
+                    <button id="cambiarFondo" class="btn btn-warning">Cambiar Fondo</button>
+                    <button id="resetearFondo" class="btn btn-info">Resetear Fondo</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo de Eventos -->
+        <section class="seccion-eventos">
+            <h2>🖱️ Eventos del DOM</h2>
+            
+            <div class="ejemplos-eventos">
+                <div class="ejemplo">
+                    <h3>Eventos de Mouse</h3>
+                    <div id="areaEvento" class="area-evento">
+                        Pasa el mouse por aquí
+                    </div>
+                    <p id="estadoEvento">Estado: Esperando interacción...</p>
+                </div>
+
+                <div class="ejemplo">
+                    <h3>Contador de Clicks</h3>
+                    <button id="contadorBtn" class="btn btn-primary">Click me! 🖱️</button>
+                    <p>Clicks: <span id="contador">0</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo de API -->
+        <section class="seccion-api">
+            <h2>🌐 Consumo de API</h2>
+            
+            <div class="ejemplos-api">
+                <div class="ejemplo">
+                    <h3>Posts desde JSONPlaceholder</h3>
+                    <button id="cargarPosts" class="btn btn-primary">Cargar Posts</button>
+                    <button id="limpiarPosts" class="btn btn-secondary">Limpiar</button>
+                    <div id="loadingPosts" class="loading" style="display: none;">
+                        ⏳ Cargando posts...
+                    </div>
+                    <div id="listaPosts" class="lista-posts"></div>
+                </div>
+
+                <div class="ejemplo">
+                    <h3>Usuarios de la API</h3>
+                    <button id="cargarUsuarios" class="btn btn-success">Cargar Usuarios</button>
+                    <div id="loadingUsuarios" class="loading" style="display: none;">
+                        ⏳ Cargando usuarios...
+                    </div>
+                    <div id="tablaUsuarios" class="tabla-contenedor"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Debugging -->
+        <section class="seccion-debug">
+            <h2>🔍 Debugging con Console</h2>
+            <p>Abre la consola del navegador (F12) para ver los mensajes de debug</p>
+            <button id="debugBtn" class="btn btn-info">Generar Logs de Debug</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 UTN - Clase de JavaScript Frontend</p>
+        <p><em>Tip: Abre la consola (F12) para ver los mensajes de debug</em></p>
+    </footer>
+
+    <!-- Script JS al final del body (como se recomienda en la clase) -->
+    <script src="scripts.js"></script>
+</body>
+</html>
