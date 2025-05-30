@@ -62,7 +62,7 @@ section h2 {
 }
 
 /* Ejemplos containers */
-.ejemplos-dom, .ejemplos-eventos, .ejemplos-api {
+.ejemplos-dom, .ejemplos-eventos, .ejemplos-api, .ejemplos-alertas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
@@ -284,9 +284,42 @@ footer {
     font-weight: bold;
 }
 
+/* Estilos para alertas */
+.resultado {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: #f7fafc;
+    border-left: 4px solid #4299e1;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+.saludo-resultado {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+    border-left: 4px solid #38b2ac;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c7a7b;
+    text-align: center;
+}
+
+.saludo-resultado.vacio {
+    background: #f7fafc;
+    color: #a0aec0;
+    font-style: italic;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-    .ejemplos-dom, .ejemplos-eventos, .ejemplos-api {
+    .ejemplos-dom, .ejemplos-eventos, .ejemplos-api, .ejemplos-alertas {
         grid-template-columns: 1fr;
     }
     

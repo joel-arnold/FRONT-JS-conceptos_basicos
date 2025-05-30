@@ -164,7 +164,128 @@ contadorBtn.addEventListener("click", function() {
 });
 
 // ==========================================
-// 3. CONSUMO DE API CON FETCH
+// 3. ALERTAS Y DIÁLOGOS (Interacción con el usuario)
+// ==========================================
+
+// 1. Alert básico - Mostrar mensaje
+document.querySelector("#alertBtn").addEventListener("click", function() {
+    alert("🎉 ¡Este es un mensaje de alerta básico!\n\nEs útil para mostrar información importante al usuario.");
+    
+    console.log("🚨 Se mostró un alert al usuario");
+});
+
+// 2. Confirm - Preguntar confirmación
+document.querySelector("#confirmBtn").addEventListener("click", function() {
+    const confirmacion = confirm("🤔 ¿Estás seguro de que quieres continuar?\n\n✅ OK = Sí\n❌ Cancelar = No");
+    
+    const resultadoConfirm = document.querySelector("#resultadoConfirm");
+    
+    if (confirmacion) {
+        resultadoConfirm.textContent = "✅ El usuario confirmó (OK)";
+        resultadoConfirm.style.background = "#f0fff4";
+        resultadoConfirm.style.borderColor = "#38a169";
+        resultadoConfirm.style.color = "#22543d";
+        console.log("✅ Usuario confirmó la acción");
+    } else {
+        resultadoConfirm.textContent = "❌ El usuario canceló";
+        resultadoConfirm.style.background = "#fed7d7";
+        resultadoConfirm.style.borderColor = "#e53e3e";
+        resultadoConfirm.style.color = "#742a2a";
+        console.log("❌ Usuario canceló la acción");
+    }
+});
+
+// 3. Prompt - Solicitar información
+document.querySelector("#promptBtn").addEventListener("click", function() {
+    const nombre = prompt("📝 Por favor, ingresa tu nombre:", "Estudiante");
+    
+    const resultadoPrompt = document.querySelector("#resultadoPrompt");
+    
+    if (nombre !== null && nombre.trim() !== "") {
+        resultadoPrompt.textContent = `👋 Hola, ${nombre}! Gracias por participar.`;
+        resultadoPrompt.style.background = "#e6fffa";
+        resultadoPrompt.style.borderColor = "#38b2ac";
+        resultadoPrompt.style.color = "#234e52";
+        console.log(`📝 Usuario ingresó el nombre: "${nombre}"`);
+    } else if (nombre === null) {
+        resultadoPrompt.textContent = "🚫 Operación cancelada por el usuario";
+        resultadoPrompt.style.background = "#fed7d7";
+        resultadoPrompt.style.borderColor = "#e53e3e";
+        resultadoPrompt.style.color = "#742a2a";
+        console.log("🚫 Usuario canceló el prompt");
+    } else {
+        resultadoPrompt.textContent = "⚠️ No se ingresó ningún nombre";
+        resultadoPrompt.style.background = "#fffbeb";
+        resultadoPrompt.style.borderColor = "#d69e2e";
+        resultadoPrompt.style.color = "#744210";
+        console.log("⚠️ Usuario ingresó texto vacío");
+    }
+});
+
+// 4. Ejemplo combinando alertas - Saludo personalizado
+document.querySelector("#saludoBtn").addEventListener("click", function() {
+    const saludoDiv = document.querySelector("#saludoPersonalizado");
+    
+    // Primero preguntamos si quiere crear un saludo
+    const quiereSaludo = confirm("👋 ¿Te gustaría crear un saludo personalizado?\n\nEsto usará varios tipos de alertas.");
+    
+    if (!quiereSaludo) {
+        saludoDiv.textContent = "🚫 Operación cancelada";
+        saludoDiv.className = "saludo-resultado vacio";
+        console.log("🚫 Usuario no quiso crear saludo");
+        return;
+    }
+    
+    // Pedimos el nombre
+    const nombre = prompt("👤 ¿Cuál es tu nombre?", "");
+    
+    if (nombre === null || nombre.trim() === "") {
+        alert("❌ No se puede crear un saludo sin nombre");
+        saludoDiv.textContent = "❌ Saludo cancelado - Falta el nombre";
+        saludoDiv.className = "saludo-resultado vacio";
+        console.log("❌ Saludo cancelado por falta de nombre");
+        return;
+    }
+    
+    // Pedimos la edad (opcional)
+    const edad = prompt("🎂 ¿Cuántos años tienes? (opcional)", "");
+    
+    // Preguntamos sobre el curso
+    const estudiaUTN = confirm("🎓 ¿Estudias en la UTN?");
+    
+    // Creamos el saludo personalizado
+    let saludo = `🎉 ¡Hola ${nombre}!`;
+    
+    if (edad && !isNaN(edad) && edad.trim() !== "") {
+        saludo += ` Con ${edad} años,`;
+    }
+    
+    if (estudiaUTN) {
+        saludo += " es genial que estudies en la UTN. ¡Bienvenido/a a la clase de JavaScript! 🚀";
+    } else {
+        saludo += " ¡esperamos que disfrutes aprendiendo JavaScript! 💻";
+    }
+    
+    // Mostrar el resultado
+    saludoDiv.textContent = saludo;
+    saludoDiv.className = "saludo-resultado";
+    
+    // Alert final con el resultado
+    alert(`Saludo creado:\n\n${saludo}`);
+    
+    console.log("🎉 Saludo personalizado creado:", saludo);
+    
+    // Log con toda la información recopilada
+    console.log("📊 Información del usuario:", {
+        nombre: nombre,
+        edad: edad || "No especificada",
+        estudiaUTN: estudiaUTN ? "Sí" : "No",
+        saludoCompleto: saludo
+    });
+});
+
+// ==========================================
+// 4. CONSUMO DE API CON FETCH
 // ==========================================
 
 // A. Cargar posts desde JSONPlaceholder
@@ -285,7 +406,7 @@ document.querySelector("#cargarUsuarios").addEventListener("click", async functi
 });
 
 // ==========================================
-// 4. DEBUGGING CON CONSOLE (Herramientas de desarrollo)
+// 5. DEBUGGING CON CONSOLE (Herramientas de desarrollo)
 // ==========================================
 
 document.querySelector("#debugBtn").addEventListener("click", function() {
@@ -335,7 +456,7 @@ document.querySelector("#debugBtn").addEventListener("click", function() {
 });
 
 // ==========================================
-// 5. EVENTOS AL CARGAR LA PÁGINA
+// 6. EVENTOS AL CARGAR LA PÁGINA
 // ==========================================
 
 // Mensaje de bienvenida cuando carga la página
@@ -357,7 +478,7 @@ window.addEventListener("beforeunload", function() {
 });
 
 // ==========================================
-// 6. FUNCIONES AUXILIARES (Conceptos adicionales)
+// 7. FUNCIONES AUXILIARES (Conceptos adicionales)
 // ==========================================
 
 // Función para generar color aleatorio (ejemplo de función reutilizable)
@@ -406,13 +527,19 @@ mostrarMensaje("📚 Todos los conceptos del temario están implementados", "inf
    - Manejo de eventos de formulario
    - Event listeners para interactividad
 
-✅ 4. Consumo de API:
+✅ 4. Alertas y diálogos:
+   - alert() para mostrar mensajes
+   - confirm() para obtener confirmación
+   - prompt() para solicitar información
+   - Combinación de alertas para flujos complejos
+
+✅ 5. Consumo de API:
    - fetch() con JSONPlaceholder
    - Manejo de promesas con async/await
    - Manejo de errores en peticiones HTTP
    - Mostrar datos dinámicamente en el DOM
 
-✅ 5. Conceptos adicionales:
+✅ 6. Conceptos adicionales:
    - Funciones reutilizables
    - Debugging con console
    - Animaciones CSS desde JavaScript
