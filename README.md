@@ -1,20 +1,20 @@
-# 📚 Proyecto JavaScript Frontend - UTN
+# 📚 Proyecto JavaScript Frontend
 
 ## 🎯 Objetivo
-Este proyecto implementa **todos los conceptos** del temario de la clase de JavaScript Frontend, incluyendo manipulación del DOM, eventos y consumo de APIs.
+Este proyecto implementa varios de los conceptos del temario de la clase de JavaScript Frontend, incluyendo manipulación del DOM, eventos y consumo de APIs.
 
-## 🗂️ Estructura del Proyecto
+## 🗂️ Estructura del proyecto
 ```
 front-js/
 ├── index.html      # Página principal con ejemplos prácticos
 ├── styles.css      # Estilos modernos y responsivos
-├── scripts.js      # JavaScript con todos los conceptos del temario
+├── scripts.js      # JavaScript con los conceptos del temario
 └── README.md       # Este archivo
 ```
 
-## 📖 Conceptos Implementados
+## 📖 Conceptos implementados
 
-### 1. **Introducción a JS Frontend**
+### 1. **Introducción a JS frontend**
 - ✅ Uso de la consola del navegador (`console.log`, `console.error`, etc.)
 - ✅ Script externo vinculado al HTML
 - ✅ Debugging con herramientas de desarrollo
@@ -27,7 +27,7 @@ front-js/
   - Agregar/remover clases
 - ✅ **Creación dinámica** de elementos
 
-### 3. **Eventos Básicos**
+### 3. **Eventos básicos**
 - ✅ `addEventListener()` para eventos de click
 - ✅ Eventos de mouse (`mouseover`, `mouseout`)
 - ✅ Manejo de estados y contadores
@@ -39,51 +39,51 @@ front-js/
 - ✅ Manejo de errores en peticiones HTTP
 - ✅ Mostrar datos dinámicamente en el DOM
 
-## 🚀 Cómo Usar el Proyecto
+## 🚀 Cómo usar el proyecto
 
-### Opción 1: Con Live Server (Recomendado)
-1. Abre VS Code en la carpeta del proyecto
-2. Instala la extensión "Live Server"
+### Opción 1: con Live Server (recomendado)
+1. Abrí VS Code en la carpeta del proyecto
+2. Instalá la extensión "Live Server"
 3. Click derecho en `index.html` → "Open with Live Server"
-4. Se abrirá automáticamente en el navegador
+4. Se va a abrir automáticamente en el navegador
 
-### Opción 2: Archivo Local
-1. Simplemente abre `index.html` en tu navegador
-2. No requiere servidor web para funcionar
+### Opción 2: archivo local
+1. Simplemente abrí `index.html` en tu navegador
+2. No necesita servidor web para funcionar
 
-## 🔍 Funcionalidades Incluidas
+## 🔍 Funcionalidades incluidas
 
 ### **Sección DOM**
-- **Cambiar texto y color**: Demuestra `textContent` y modificación de estilos
-- **Mostrar/Ocultar menú**: Ejemplo de toggle con clases CSS
-- **Cambiar fondo**: Modificación dinámica de clases en `<body>`
+- **Cambiar texto y color**: demuestra `textContent` y modificación de estilos
+- **Mostrar/Ocultar menú**: ejemplo de toggle con clases CSS
+- **Cambiar fondo**: modificación dinámica de clases en `<body>`
 
 ### **Sección Eventos**
-- **Área interactiva**: Responde a `mouseover`, `mouseout` y `click`
-- **Contador de clicks**: Manejo de estado y eventos repetidos
+- **Área interactiva**: responde a `mouseover`, `mouseout` y `click`
+- **Contador de clicks**: manejo de estado y eventos repetidos
 
 ### **Sección API**
-- **Cargar Posts**: Consume API de posts y los muestra dinámicamente
-- **Cargar Usuarios**: Crea tabla HTML con datos de usuarios
-- **Loading states**: Indicadores visuales durante las peticiones
+- **Cargar Posts**: consume API de posts y los muestra dinámicamente
+- **Cargar Usuarios**: crea tabla HTML con datos de usuarios
+- **Loading states**: indicadores visuales durante las peticiones
 
 ### **Debugging**
-- **Console logs**: Mensajes informativos en cada acción
-- **Información del sistema**: Browser info, window info, etc.
+- **Console logs**: mensajes informativos en cada acción
+- **Información del sistema**: información del navegador, window info, etc.
 - **Tipos de logs**: `info`, `warn`, `error`, `table`
 
 ## 🎨 Características Técnicas
 
-- **Responsive Design**: Se adapta a móviles y desktop
-- **Animaciones CSS**: Transiciones suaves y efectos visuales
-- **Manejo de Errores**: Try/catch en peticiones API
-- **Código Comentado**: Explicaciones detalladas para aprendizaje
+- **Responsive Design**: se adapta a móviles y desktop
+- **Animaciones CSS**: transiciones suaves y efectos visuales
+- **Manejo de Errores**: try/catch en peticiones API
+- **Código Comentado**: explicaciones detalladas para aprendizaje
 - **Modern JavaScript**: ES6+ features (arrow functions, async/await)
 
 ## 📱 Compatibilidad
 - ✅ Chrome, Firefox, Safari, Edge
 - ✅ Dispositivos móviles
-- ✅ No requiere dependencias externas
+- ✅ No necesita dependencias externas
 
 ## 🔧 Para Desarrollar
 
@@ -92,38 +92,26 @@ front-js/
 - **Mac**: `Cmd + Option + I`
 
 ### Tips para estudiantes:
-1. Abre siempre la consola para ver los mensajes de debug
-2. Experimenta modificando valores en `scripts.js`
-3. Usa el botón "Debug" para generar información del sistema
-4. Prueba los diferentes eventos y observa los logs
+1. Abrí siempre la consola para ver los mensajes de debug
+2. Experimentá modificando valores en `scripts.js`
+3. Usá el botón "Debug" para generar información del sistema
+4. Probá los diferentes eventos y observá los logs
 
 ## 🎯 Objetivos de Aprendizaje Cubiertos
-
-Al completar este proyecto, los estudiantes habrán aprendido:
 
 1. **Cómo conectar JavaScript con HTML**
 2. **Seleccionar y modificar elementos del DOM**
 3. **Manejar eventos del usuario**
 4. **Consumir APIs externas**
-5. **Debuggear código con la consola**
+5. **Debuguear código con la consola**
 6. **Crear interfaces interactivas**
 
 ## 📚 APIs Utilizadas
 
-- **JSONPlaceholder**: API fake para pruebas
+- **JSONPlaceholder**: API para pruebas
   - Posts: `https://jsonplaceholder.typicode.com/posts`
   - Usuarios: `https://jsonplaceholder.typicode.com/users`
 
-## 🤝 Para Profesores
-
-Este proyecto está diseñado para:
-- **Demostración en vivo**: Cada concepto tiene ejemplos visuales
-- **Práctica guiada**: Los estudiantes pueden modificar y experimentar
-- **Evaluación**: Fácil verificación de conceptos aprendidos
-- **Escalabilidad**: Base sólida para proyectos más complejos
-
 ---
 
-**🎉 ¡Proyecto completo y listo para la clase!**
-
-*Desarrollado para UTN - Desarrollo de Software Frontend*
+*Desarrollado para la cátedra "Desarrollo de software" de la Universidad Tecnológica Nacional - Facultad Regional Rosario*
