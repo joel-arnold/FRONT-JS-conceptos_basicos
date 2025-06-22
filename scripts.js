@@ -71,7 +71,7 @@ botonToggleMenu.addEventListener("click", function() {
     menuOculto.classList.toggle("mostrar");
     
     const estaVisible = menuOculto.classList.contains("mostrar");
-    botonToggleMenu.textContent = estaVisible ? "Ocultar Menú" : "Mostrar Menú";
+    botonToggleMenu.textContent = estaVisible ? "Ocultar menú" : "Mostrar menú";
     
     console.log(`👁️ Menú ${estaVisible ? 'mostrado' : 'ocultado'}`);
 });
@@ -117,7 +117,7 @@ areaEvento.addEventListener("mouseover", function() {
 areaEvento.addEventListener("mouseout", function() {
     areaEvento.style.background = "#e2e8f0";
     areaEvento.style.transform = "scale(1)";
-    estadoEvento.textContent = "Estado: Mouse fuera 👋";
+    estadoEvento.textContent = "Estado: Mouse afuera 👋";
     estadoEvento.style.color = "#4a5568";
     
     console.log("👋 Mouse fuera del área");
@@ -159,7 +159,7 @@ contadorBtn.addEventListener("click", function() {
     
     // Easter egg: mensaje especial cada 10 clicks
     if (contadorClicks % 10 === 0) {
-        alert(`🎉 ¡Has hecho ${contadorClicks} clicks! ¡Impresionante!`);
+        alert(`🎉 ¡Hiciste ${contadorClicks} clicks! ¡Impresionante!`);
     }
 });
 
@@ -176,7 +176,7 @@ document.querySelector("#alertBtn").addEventListener("click", function() {
 
 // 2. Confirm - Preguntar confirmación
 document.querySelector("#confirmBtn").addEventListener("click", function() {
-    const confirmacion = confirm("🤔 ¿Estás seguro de que quieres continuar?\n\n✅ OK = Sí\n❌ Cancelar = No");
+    const confirmacion = confirm("🤔 ¿Estás seguro de que querés continuar?\n\n✅ OK = Sí\n❌ Cancelar = No");
     
     const resultadoConfirm = document.querySelector("#resultadoConfirm");
     
@@ -197,12 +197,12 @@ document.querySelector("#confirmBtn").addEventListener("click", function() {
 
 // 3. Prompt - Solicitar información
 document.querySelector("#promptBtn").addEventListener("click", function() {
-    const nombre = prompt("📝 Por favor, ingresa tu nombre:", "Estudiante");
+    const nombre = prompt("📝 Por favor, ingresá tu nombre:", "Estudiante");
     
     const resultadoPrompt = document.querySelector("#resultadoPrompt");
     
     if (nombre !== null && nombre.trim() !== "") {
-        resultadoPrompt.textContent = `👋 Hola, ${nombre}! Gracias por participar.`;
+        resultadoPrompt.textContent = `👋 ¡Hola, ${nombre}! Gracias por participar.`;
         resultadoPrompt.style.background = "#e6fffa";
         resultadoPrompt.style.borderColor = "#38b2ac";
         resultadoPrompt.style.color = "#234e52";
@@ -227,7 +227,7 @@ document.querySelector("#saludoBtn").addEventListener("click", function() {
     const saludoDiv = document.querySelector("#saludoPersonalizado");
     
     // Primero preguntamos si quiere crear un saludo
-    const quiereSaludo = confirm("👋 ¿Te gustaría crear un saludo personalizado?\n\nEsto usará varios tipos de alertas.");
+    const quiereSaludo = confirm("👋 ¿Te gustaría crear un saludo personalizado?\n\nEsto va a usar varios tipos de alertas.");
     
     if (!quiereSaludo) {
         saludoDiv.textContent = "🚫 Operación cancelada";
@@ -248,10 +248,10 @@ document.querySelector("#saludoBtn").addEventListener("click", function() {
     }
     
     // Pedimos la edad (opcional)
-    const edad = prompt("🎂 ¿Cuántos años tienes? (opcional)", "");
+    const edad = prompt("🎂 ¿Cuántos años tenés? (opcional)", "");
     
     // Preguntamos sobre el curso
-    const estudiaUTN = confirm("🎓 ¿Estudias en la UTN?");
+    const estudiaUTN = confirm("🎓 ¿Estudiás en la UTN?");
     
     // Creamos el saludo personalizado
     let saludo = `🎉 ¡Hola ${nombre}!`;
@@ -452,7 +452,7 @@ document.querySelector("#debugBtn").addEventListener("click", function() {
     
     console.log("🔍 === FIN DEBUG INFO ===");
     
-    alert("🔍 Información de debug generada. ¡Revisa la consola (F12)!");
+    alert("🔍 Información de debug generada. ¡Revisá la consola (F12)!");
 });
 
 // ==========================================
@@ -468,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Tip para los estudiantes
     setTimeout(() => {
-        console.log("💡 TIP: Intenta cambiar algunos elementos y observa los logs en la consola");
+        console.log("💡 TIP: Intentá cambiar algunos elementos y observá los logs en la consola");
     }, 2000);
 });
 

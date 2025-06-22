@@ -19,7 +19,7 @@ front-js/
 - ✅ Script externo vinculado al HTML
 - ✅ Debugging con herramientas de desarrollo
 
-### 2. **Manipulación del DOM (Núcleo de la clase)**
+### 2. **Manipulación del DOM (núcleo de la clase)**
 - ✅ **Selección de elementos**: `querySelector()` y `querySelectorAll()`
 - ✅ **Modificación de elementos**: 
   - `textContent` y `innerHTML`
@@ -55,16 +55,16 @@ front-js/
 
 ### **Sección DOM**
 - **Cambiar texto y color**: demuestra `textContent` y modificación de estilos
-- **Mostrar/Ocultar menú**: ejemplo de toggle con clases CSS
+- **Mostrar/ocultar menú**: ejemplo de toggle con clases CSS
 - **Cambiar fondo**: modificación dinámica de clases en `<body>`
 
-### **Sección Eventos**
+### **Sección eventos**
 - **Área interactiva**: responde a `mouseover`, `mouseout` y `click`
 - **Contador de clicks**: manejo de estado y eventos repetidos
 
 ### **Sección API**
-- **Cargar Posts**: consume API de posts y los muestra dinámicamente
-- **Cargar Usuarios**: crea tabla HTML con datos de usuarios
+- **Cargar posts**: consume API de posts y los muestra dinámicamente
+- **Cargar usuarios**: crea tabla HTML con datos de usuarios
 - **Loading states**: indicadores visuales durante las peticiones
 
 ### **Debugging**
@@ -72,12 +72,12 @@ front-js/
 - **Información del sistema**: información del navegador, window info, etc.
 - **Tipos de logs**: `info`, `warn`, `error`, `table`
 
-## 🎨 Características Técnicas
+## 🎨 Características técnicas
 
-- **Responsive Design**: se adapta a móviles y desktop
+- **Responsive design**: se adapta a móviles y desktop
 - **Animaciones CSS**: transiciones suaves y efectos visuales
-- **Manejo de Errores**: try/catch en peticiones API
-- **Código Comentado**: explicaciones detalladas para aprendizaje
+- **Manejo de errores**: try/catch en peticiones API
+- **Código comentado**: explicaciones detalladas para aprendizaje
 - **Modern JavaScript**: ES6+ features (arrow functions, async/await)
 
 ## 📱 Compatibilidad
@@ -85,7 +85,7 @@ front-js/
 - ✅ Dispositivos móviles
 - ✅ No necesita dependencias externas
 
-## 🔧 Para Desarrollar
+## 🔧 Para desarrollar
 
 ### Abrir la consola del navegador:
 - **Windows/Linux**: `F12` o `Ctrl + Shift + I`
@@ -97,7 +97,7 @@ front-js/
 3. Usá el botón "Debug" para generar información del sistema
 4. Probá los diferentes eventos y observá los logs
 
-## 🎯 Objetivos de Aprendizaje Cubiertos
+## 🎯 Objetivos de aprendizaje cubiertos
 
 1. **Cómo conectar JavaScript con HTML**
 2. **Seleccionar y modificar elementos del DOM**
@@ -106,7 +106,7 @@ front-js/
 5. **Debuguear código con la consola**
 6. **Crear interfaces interactivas**
 
-## 📚 APIs Utilizadas
+## 📚 APIs utilizadas
 
 - **JSONPlaceholder**: API para pruebas
   - Posts: `https://jsonplaceholder.typicode.com/posts`

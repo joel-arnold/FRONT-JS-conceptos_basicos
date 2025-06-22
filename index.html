@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase JS Frontend - UTN</title>
+    <link rel="shortcut icon" href="/UTN_logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Sección 1: Introducción y Manipulación del DOM -->
     <header>
-        <h1 id="titulo">¡Bienvenidos a la Clase de JavaScript!</h1>
-        <p id="subtitulo">Aprende a manipular el DOM y consumir APIs</p>
+        <h1 id="titulo">¡Clase de JavaScript!</h1>
+        <p id="subtitulo">Aprendé a manipular el DOM y consumir APIs</p>
     </header>
 
     <main>
@@ -20,14 +21,14 @@
             
             <div class="ejemplos-dom">
                 <div class="ejemplo">
-                    <h3>Cambiar Texto y Estilos</h3>
+                    <h3>Cambiar texto y estilos</h3>
                     <p id="texto-ejemplo">Este texto puede cambiar</p>
-                    <button id="cambiarTexto" class="btn btn-primary">Cambiar Texto</button>
-                    <button id="cambiarColor" class="btn btn-secondary">Cambiar Color</button>
+                    <button id="cambiarTexto" class="btn btn-primary">Cambiar texto</button>
+                    <button id="cambiarColor" class="btn btn-secondary">Cambiar color</button>
                 </div>
 
                 <div class="ejemplo">
-                    <h3>Mostrar/Ocultar Elementos</h3>
+                    <h3>Mostrar/ocultar elementos</h3>
                     <div id="menuOculto" class="menu-oculto">
                         <p>🎉 ¡Este es un menú que se puede mostrar/ocultar!</p>
                         <ul>
@@ -36,13 +37,13 @@
                             <li>Opción 3</li>
                         </ul>
                     </div>
-                    <button id="toggleMenu" class="btn btn-success">Mostrar/Ocultar Menú</button>
+                    <button id="toggleMenu" class="btn btn-success">Mostrar/ocultar menú</button>
                 </div>
 
                 <div class="ejemplo">
-                    <h3>Cambiar Fondo de la Página</h3>
-                    <button id="cambiarFondo" class="btn btn-warning">Cambiar Fondo</button>
-                    <button id="resetearFondo" class="btn btn-info">Resetear Fondo</button>
+                    <h3>Cambiar fondo de la página</h3>
+                    <button id="cambiarFondo" class="btn btn-warning">Cambiar fondo</button>
+                    <button id="resetearFondo" class="btn btn-info">Resetear fondo</button>
                 </div>
             </div>
         </section>
@@ -53,16 +54,16 @@
             
             <div class="ejemplos-eventos">
                 <div class="ejemplo">
-                    <h3>Eventos de Mouse</h3>
+                    <h3>Eventos de mouse</h3>
                     <div id="areaEvento" class="area-evento">
-                        Pasa el mouse por aquí
+                        Pasá el mouse por acá
                     </div>
                     <p id="estadoEvento">Estado: Esperando interacción...</p>
                 </div>
 
                 <div class="ejemplo">
-                    <h3>Contador de Clicks</h3>
-                    <button id="contadorBtn" class="btn btn-primary">Click me! 🖱️</button>
+                    <h3>Contador de clicks</h3>
+                    <button id="contadorBtn" class="btn btn-primary">¡Haceme click! 🖱️</button>
                     <p>Clicks: <span id="contador">0</span></p>
                 </div>
             </div>
@@ -75,7 +76,7 @@
             <div class="ejemplos-api">
                 <div class="ejemplo">
                     <h3>Posts desde JSONPlaceholder</h3>
-                    <button id="cargarPosts" class="btn btn-primary">Cargar Posts</button>
+                    <button id="cargarPosts" class="btn btn-primary">Cargar posts</button>
                     <button id="limpiarPosts" class="btn btn-secondary">Limpiar</button>
                     <div id="loadingPosts" class="loading" style="display: none;">
                         ⏳ Cargando posts...
@@ -85,7 +86,7 @@
 
                 <div class="ejemplo">
                     <h3>Usuarios de la API</h3>
-                    <button id="cargarUsuarios" class="btn btn-success">Cargar Usuarios</button>
+                    <button id="cargarUsuarios" class="btn btn-success">Cargar usuarios</button>
                     <div id="loadingUsuarios" class="loading" style="display: none;">
                         ⏳ Cargando usuarios...
                     </div>
@@ -96,33 +97,33 @@
 
         <!-- Sección de Alertas -->
         <section class="seccion-alertas">
-            <h2>🚨 Alertas y Diálogos</h2>
+            <h2>🚨 Alertas y diálogos</h2>
             
             <div class="ejemplos-alertas">
                 <div class="ejemplo">
-                    <h3>Alert - Mostrar Mensaje</h3>
+                    <h3>Alert - mostrar mensaje</h3>
                     <p>Muestra un mensaje simple al usuario</p>
-                    <button id="alertBtn" class="btn btn-warning">Mostrar Alert</button>
+                    <button id="alertBtn" class="btn btn-warning">Mostrar alert</button>
                 </div>
 
                 <div class="ejemplo">
-                    <h3>Confirm - Preguntar Confirmación</h3>
+                    <h3>Confirm - preguntar confirmación</h3>
                     <p>Pregunta al usuario y recibe respuesta Sí/No</p>
-                    <button id="confirmBtn" class="btn btn-info">Mostrar Confirm</button>
+                    <button id="confirmBtn" class="btn btn-info">Mostrar confirm</button>
                     <p id="resultadoConfirm" class="resultado"></p>
                 </div>
 
                 <div class="ejemplo">
-                    <h3>Prompt - Solicitar Información</h3>
+                    <h3>Prompt - solicitar información</h3>
                     <p>Pide al usuario que ingrese texto</p>
-                    <button id="promptBtn" class="btn btn-success">Mostrar Prompt</button>
+                    <button id="promptBtn" class="btn btn-success">Mostrar prompt</button>
                     <p id="resultadoPrompt" class="resultado"></p>
                 </div>
 
                 <div class="ejemplo">
-                    <h3>Combinando Alertas</h3>
+                    <h3>Combinando alertas</h3>
                     <p>Ejemplo práctico: Saludo personalizado</p>
-                    <button id="saludoBtn" class="btn btn-primary">Crear Saludo</button>
+                    <button id="saludoBtn" class="btn btn-primary">Crear saludo</button>
                     <div id="saludoPersonalizado" class="saludo-resultado"></div>
                 </div>
             </div>
@@ -131,14 +132,14 @@
         <!-- Sección de Debugging -->
         <section class="seccion-debug">
             <h2>🔍 Debugging con Console</h2>
-            <p>Abre la consola del navegador (F12) para ver los mensajes de debug</p>
-            <button id="debugBtn" class="btn btn-info">Generar Logs de Debug</button>
+            <p>Abrí la consola del navegador (F12) para ver los mensajes de debug</p>
+            <button id="debugBtn" class="btn btn-info">Generar logs de debug</button>
         </section>
     </main>
 
     <footer>
         <p>© 2025 UTN - Clase de JavaScript Frontend</p>
-        <p><em>Tip: Abre la consola (F12) para ver los mensajes de debug</em></p>
+        <p><em>Tip: Abrí la consola (F12) para ver los mensajes de debug</em></p>
     </footer>
 
     <!-- Script JS al final del body (como se recomienda en la clase) -->
